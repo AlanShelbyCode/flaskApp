@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Add employee
+{% endblock %}
+
+{% block body %}
+<div class="container mt-5">
+    <h1> Add employee </h1>
+    <form method="post">
+        <input type="text" name="first_name" id="first_name" placeholder="first_name" class="form-control" value="{{employee.first_name}}"><br>
+        <input type="text" name="last_name" id="last_name" placeholder="last_name" class="form-control" value="{{employee.last_name}}"><br>
+        <input type="text" name="email" id="email" placeholder="email" class="form-control"value="{{employee.email}}" ><br>
+        <input type="text" name="phone_number" id="phone_number" placeholder="phone_number" class="form-control" value="{{employee.phone_number}}"><br>
+        <input type="text" name="hire_date" id="hire_date" placeholder="hire_date" class="form-control" value="{{employee.hire_date}}"><br>
+        <input type="text" name="job_id" id="job_id" placeholder="job_id" class="form-control" value="{{employee.job_id}}"><br>
+        <input type="text" name="salary" id="salary" placeholder="salary" class="form-control" value="{{employee.salary}}"><br>
+        <input type="text" name="comission_pct" id="comission_pct" placeholder="comission_pct" class="form-control" value="{{employee.comission_pct}}"><br>
+        <input type="text" name="manager_id" id="manager_id" placeholder="manager_id" class="form-control" value="{{employee.manager_id}}"><br>
+        <input type="text" name="departament_id" id="departament_id" placeholder="departament_id" class="form-control" value="{{employee.departament_id}}"><br>
+        <input type="submit" class="btn btn-success" value="send">
+    </form>
+</div>
+
+{% endblock %}

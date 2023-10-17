@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Update
+{% endblock %}
+
+{% block body %}
+<div class="container mt-5">
+    <h1> Update us </h1>
+    <form method="post">
+        <input type="text" name="departaments_name" id="departaments_name" class="form-control" value="{{department.departaments_name}}"><br>
+        <input type="text" name="manager_id" id="manager_id" class="form-control" value="{{department.manager_id}}"><br>
+        <input type="text" name="location_id" id="location_id" class="form-control" value="{{department.location_id}}"><br>
+        <input type="submit" class="btn btn-success" value="Update">
+    </form>
+</div>
+
+{% endblock %}

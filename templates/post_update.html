@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Update
+{% endblock %}
+
+{% block body %}
+<div class="container mt-5">
+    <h1> Update us </h1>
+    <form method="post">
+        <input type="text" name="title" id="title" class="form-control" value="{{article.title}}"><br>
+        <input type="text" name="intro" id="intro" class="form-control" value="{{article.intro}}"><br>
+        <input type="text" name="text" id="text" class="form-control" value="{{article.text}}"><br>
+        <input type="submit" class="btn btn-success" value="Update">
+    </form>
+</div>
+
+{% endblock %}
